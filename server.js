@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {rpsls, rps} from './lib/lib/rpsls.js';
+import {rpsls, rps} from './lib/rpsls.js';
 import minimist from "minimist";
 import express from 'express';
 
@@ -46,5 +46,5 @@ app.get('*', function(req, res){
       res.status(404).send('404 NOT FOUND');
 });
 app.listen(port, () => {
-    
+
 });
